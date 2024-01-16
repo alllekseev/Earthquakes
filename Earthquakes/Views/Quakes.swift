@@ -39,30 +39,33 @@ struct Quakes: View {
         NavigationView {
             List(selection: $selection) {
                 ForEach(provider.quakes) { quake in
-                    QuakeRow(quake: quake)
+                    NavigationLink(destination: QuakeDetail(quake: quake)) {
+                        QuakeRow(quake: quake)
+                    }
                 }
                 .onDelete(perform: deleteQuakes)
             }
+
             .listStyle(.inset)
-            .navigationTitle(title)
+            .navigationTitle("Earthquakes")
             .toolbar(content: toolbarContent)
             .environment(\.editMode, $editMode)
             .refreshable {
-                await fetchQuakes()
+                do {
+                    try await provider.fetchQuakes()
+                } catch {
+                    self.error = QuakeError.missingData
+                    hasError = true
+                }
             }
+        }
+        .task {
+            try? await provider.fetchQuakes()
         }
     }
 }
 
 extension Quakes {
-    var title: String {
-        if selectMode.isActive || selection.isEmpty {
-            return "Earthquakes"
-        } else {
-            return "\(selection.count) Selected"
-        }
-    }
-
     func deleteQuakes(at offsets: IndexSet) {
         provider.deleteQuakes(atOffsets: offsets)
     }

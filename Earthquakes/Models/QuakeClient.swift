@@ -26,7 +26,7 @@ actor QuakeClient {
                             return (index, location)
                         }
                     }
-                    while let location = await group.nextResult() {
+                    while let result = await group.nextResult() {
                         switch result {
                         case .failure(let error):
                             throw error
