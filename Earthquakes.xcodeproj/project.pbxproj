@@ -66,6 +66,11 @@
 		2A7878FA2B56C7C40067C5C5 /* Quake+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+Preview.swift"; sourceTree = "<group>"; };
 		2A7878FC2B56C8BC0067C5C5 /* QuakeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetail.swift; sourceTree = "<group>"; };
 		2A7878FE2B56DD660067C5C5 /* QuakeDetailMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetailMap.swift; sourceTree = "<group>"; };
+		2AB908F02B58155900EF0C00 /* DetailScreenLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DetailScreenLight.png; sourceTree = "<group>"; };
+		2AB908F12B58155A00EF0C00 /* MainScreenLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainScreenLight.png; sourceTree = "<group>"; };
+		2AB908F22B58155A00EF0C00 /* MainScreenDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainScreenDark.png; sourceTree = "<group>"; };
+		2AB908F32B58155A00EF0C00 /* DetailScreenDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DetailScreenDark.png; sourceTree = "<group>"; };
+		2AB908F42B58155A00EF0C00 /* MainScreenLightEdit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainScreenLightEdit.png; sourceTree = "<group>"; };
 		54CF5BED3CD9DE525986B01C /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		6EC8C05DC1E92B40CD3EBA87 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		7CC62564273C2A9200F87758 /* Quake+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+Color.swift"; sourceTree = "<group>"; };
@@ -112,6 +117,18 @@
 			path = EarthquakesTests;
 			sourceTree = "<group>";
 		};
+		2AB908EF2B5814E800EF0C00 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2AB908F12B58155A00EF0C00 /* MainScreenLight.png */,
+				2AB908F42B58155A00EF0C00 /* MainScreenLightEdit.png */,
+				2AB908F02B58155900EF0C00 /* DetailScreenLight.png */,
+				2AB908F22B58155A00EF0C00 /* MainScreenDark.png */,
+				2AB908F32B58155A00EF0C00 /* DetailScreenDark.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		4FABF2CAC461AE822830A879 /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +163,7 @@
 		AD43F1D926158A630068AABC = {
 			isa = PBXGroup;
 			children = (
+				2AB908EF2B5814E800EF0C00 /* Images */,
 				2A353F5E2B555AB0009140BB /* .gitignore */,
 				AA2F4EAF276BA585009837CD /* README.md */,
 				AD43F1E526158A640068AABC /* EarthquakesApp.swift */,
