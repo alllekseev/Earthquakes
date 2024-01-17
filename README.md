@@ -8,4 +8,4 @@ This project contains Network Layer for getting data from API and Unit tests for
 <img src="Images//MainScreenDark.png" alt="MainScreenDark" width="250" />
 <img src="Images/DetailScreenDark.png" alt="DetailScreenDark" width="250" />
 
-This project was created according to Apple's tutorials.
+_This project was created according to Apple's tutorials._
